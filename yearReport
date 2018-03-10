@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>YearReport</title>
+	<link rel="stylesheet" type="text/css" href="../css/aui.css" />
+	<link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style type="text/css">
+        html,body{
+            height:100%;
+        }
+        .outside{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .status-bar{
+            position: relative;
+            width: 375px;
+            height: 20px;
+            background: url(../image/wmr_status-bar.png) no-repeat;
+            background-size: cover;
+        }
+        .aui-bar-light {
+            color: #333333;
+        }
+        .information{
+            background-color: white;
+            position: relative;
+            width: 100%;
+            height:9.44%;
+        }
+        .information .up-box{
+            top: 0;
+            font-size: 0.7rem;
+            position: absolute;
+            text-align: center;
+            width: 49%;
+            height: 47.6%;
+            padding: 0.3rem;
+        }
+        .information .down-box{
+            font-size: 0.8rem;
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            width: 49%;
+            height: 47.6%;
+        }
+        .middle-line{
+            position: absolute;
+            top: 25%;
+            left: 49.9%;
+            width: 0.05rem;
+            height: 50%;
+            background-color: #797979;
+        }
+        .center-figure{
+            position: relative;
+            background: url(../image/wmr_CicleReport.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            width: 100%;
+            height: 56.8%;
+        }
+        .rear-bar{
+            position: relative;
+            width: 100%;
+            height: 1.2%;
+            background-color: white;
+        }
+        .split-string{
+            width: 90%;
+            height: 0.05rem;
+            background-color: #e6e6e6;
+            position: absolute;
+            top: 0;
+            left:5%;
+        }
+        .graysign{
+            position: absolute;
+            width:14%;
+            height: 56%;
+            background-color:#e6e6e6;
+            left: 43%;
+            top: 0.1rem;
+            border-radius: 0.1rem;
+        }
+        .rear-infor{
+            position: relative;
+            width: 100%;
+            height: 7.64%;
+            border-top: 0.05rem solid #e6e6e6;
+            background-color: white;
+        }
+        .li-img1{
+            padding-left: 1rem;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .li-img2{
+            position: absolute;
+            right: 0.8rem;
+            top: 30%;
+        }
+        .li-img3{
+            position: absolute;
+            left: 18%;
+            bottom: 13%;
+        }
+        .word-bar{
+            font-size:0.7rem;
+            position: absolute;
+            top: 13%;
+            left:18%;
+        }
+        .money-bar{
+            font-size: 0.8rem;
+            position: absolute;
+            right: 12%;
+            top: 27.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <div class="status-bar"></div>
+        <header class="aui-bar aui-bar-nav aui-bar-light">
+            <a class="aui-pull-left aui-btn">
+                <img src="../image/wmr_backup.png">
+            </a>
+            <div class="aui-title">2018年</div>
+            <a class="aui-pull-right aui-btn">
+                <img src="../image/wmr_AccountBook.png">
+            </a>
+        </header>
+        <div class="information">
+                <div class="up-box" style="left: 0;">年支出</div>
+                <div class="down-box" style="left: 0;color: #D43A32; text-decoration: underline;">15,453</div>
+                <div class="middle-line" ></div>
+                <div class="up-box" style="right: 0;">年收入</div>
+                <div class="down-box" style="right: 0; color: #0066CC; text-decoration: none;">30000</div>
+        </div>
+        <div class="center-figure"></div>
+        <div class="rear-bar">
+            <div class="split-string"></div>
+            <div class="graysign"></div>
+        </div>
+        <div class="rear-infor">
+            <div class="word-bar">住房  一笔  48.8%</div>
+            <span class="money-bar">1440.00</span>
+            <img class="li-img1" src="../image/wmr_house.png">
+            <img class="li-img3" src="../image/wmr_RedBar.png">
+            <img class="li-img2" src="../image/wmr_goin.png">
+        </div>
+        <div class="rear-infor">
+            <div class="word-bar">购物 一笔  32.6%</div>
+            <span class="money-bar">960.00</span>
+            <img class="li-img1" src="../image/wmr_shop.png">
+            <img class="li-img3" src="../image/wmr_OrangeBar.png">
+            <img class="li-img2" src="../image/wmr_goin.png">
+        </div>
+        <div class="rear-infor">
+            <div class="word-bar">餐饮 一笔  2%</div>
+            <span class="money-bar">370.00</span>
+            <img class="li-img1" src="../image/wmr_food.png">
+            <img class="li-img3" src="../image/wmr_YellowBar.png">
+            <img class="li-img2" src="../image/wmr_goin.png">
+        </div>
+    </div>
+</body>
+</html>
